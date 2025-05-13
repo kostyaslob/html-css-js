@@ -31,6 +31,7 @@ p {
     background: #131b33;
     width: 300px;
     height: 400px;
+    overflow: hidden;
 }
 
 .card span:nth-child(1) {
@@ -73,22 +74,43 @@ p {
     }
 }
 
-.card span:nth-child(1) {
+.card span:nth-child(3) {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, transparent, #17f3fd);
-    animation: animate_one 2s linear infinite;
+    background: linear-gradient(to left, transparent, #17f3fd);
+    animation: animate_three 2s linear infinite;
 }
 
-@keyframes animate_one {
+@keyframes animate_three {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(100%);
     }
 
     100% {
-        transform: translateX(100%);
+        transform: translateX(-100%);
+    }
+}
+
+.card span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #17f3fd);
+    animation: animate_four 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate_four {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
     }
 }
