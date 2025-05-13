@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: #0c1123;
+}
+
+p {
+    width: 100px;
+    padding: 10px;
+    background-color: salmon;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    background: #131b33;
+}
