@@ -90,6 +90,6 @@ p {
     }
 }
 
-.container {
+.cube-container {
     animation: rotate-cube 20s infinite linear;
 }
