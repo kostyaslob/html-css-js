@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #fff;
-}
-
 p {
     width: 100px;
     padding: 10px;
