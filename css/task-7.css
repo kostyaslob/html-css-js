@@ -25,3 +25,20 @@ p {
     min-height: 100vh;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .cards {
+    position: relative;
+    width: 350px;
+    height: 520px;
+    background-color: #ccc
+    ;
+}
+
+.icon {}
+
+.content {}
