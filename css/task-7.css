@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-
-}
-
 .back {
     width: 100px;
     padding: 10px;
@@ -31,7 +27,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin: 40px 0;
-
 }
 
 .container .cards {
@@ -141,7 +136,6 @@ body {
     z-index: 1;
     text-align: center;
     padding: 20px 30px;
-
 }
 
 .container .cards .content .text h2 {
