@@ -40,6 +40,9 @@ p {
     overflow: hidden;
     transition: 500ms;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container .cards:hover {
@@ -58,7 +61,41 @@ p {
 }
 
 .container .cards:hover img {
-    opacity: 1;
-    
+    opacity: 1;    
+}
+
+.container .cards .content {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    transform: rotate(270deg);
+    width: 260px;
+    height: 80px;
+    padding: 0 20px;
+    transition: 500ms;
+}
+
+.container .cards:hover .content {
+    top: 70%;
+    transform: rotate(360deg);
+}
+
+.container .cards .content h2 {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #fff;
+    padding: 2px 5px;
+    padding-left: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    transition: 500ms;
+    border-radius: 4px;
+}
+
+.container .cards:hover .content h2 {
+    color: #333;
+    background: #fff;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
 }
 
