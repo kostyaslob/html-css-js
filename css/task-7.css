@@ -8,7 +8,7 @@ body {
 
 }
 
-p {
+.back {
     width: 100px;
     padding: 10px;
     background-color: salmon;
@@ -66,7 +66,63 @@ p {
 }
 
 .container .cards .icon img {
-    
+    filter: invert(1);
+    max-width: 120px;
+    z-index: 10;
 }
 
-.content {}
+.container .cards .icon::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #ccc;
+}
+
+.container .cards .icon::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #333;
+    border-bottom-left-radius: 80px;
+}
+
+.container .cards .content {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .cards .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #333;
+}
+
+.container .cards .content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #ccc;
+    border-top-right-radius: 80px;
+}
+
+.container .cards .content .text {
+    z-index: 1;
+}
